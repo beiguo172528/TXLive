@@ -1,0 +1,24 @@
+PODS:
+  - Masonry (1.1.0)
+  - SVProgressHUD (2.2.5)
+  - TXLiteAVSDK_Professional (8.5.10022)
+
+DEPENDENCIES:
+  - Masonry
+  - SVProgressHUD
+  - TXLiteAVSDK_Professional
+
+SPEC REPOS:
+  trunk:
+    - Masonry
+    - SVProgressHUD
+    - TXLiteAVSDK_Professional
+
+SPEC CHECKSUMS:
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  TXLiteAVSDK_Professional: 165018e2f0570d2608d7ea2b785fc273558f9920
+
+PODFILE CHECKSUM: 20d90d20c4a5f31a6141c046cea645d0a219e6e5
+
+COCOAPODS: 1.9.3

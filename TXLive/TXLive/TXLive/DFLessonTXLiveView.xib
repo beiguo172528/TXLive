@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="WEg-eK-Lep" customClass="DFLessonTXLiveView">
+            <rect key="frame" x="0.0" y="0.0" width="509" height="412"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jd7-M7-vvT">
+                    <rect key="frame" x="0.0" y="0.0" width="509" height="50"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="5yr-3V-tSq">
+                            <rect key="frame" x="8" y="0.0" width="108" height="50"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z7h-K2-y3e">
+                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="50" id="9TD-jj-Apz"/>
+                                        <constraint firstAttribute="width" constant="50" id="NoS-GU-zRu"/>
+                                    </constraints>
+                                    <state key="normal" image="直播_返回"/>
+                                    <connections>
+                                        <action selector="onClickBackBtn:" destination="WEg-eK-Lep" eventType="touchUpInside" id="SUQ-Qt-DK8"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qyd-xE-k23">
+                                    <rect key="frame" x="58" y="0.0" width="50" height="50"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="50" id="fqn-jT-q97"/>
+                                        <constraint firstAttribute="height" constant="50" id="jeH-IH-KYQ"/>
+                                    </constraints>
+                                    <state key="normal" image="刷新_白"/>
+                                    <connections>
+                                        <action selector="onClickRefreshBtn:" destination="WEg-eK-Lep" eventType="touchUpInside" id="jPu-iG-cNA"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="5yr-3V-tSq" firstAttribute="centerY" secondItem="Jd7-M7-vvT" secondAttribute="centerY" id="Wth-7D-Ubn"/>
+                        <constraint firstItem="5yr-3V-tSq" firstAttribute="leading" secondItem="Jd7-M7-vvT" secondAttribute="leading" constant="8" id="ecu-9o-c8c"/>
+                        <constraint firstAttribute="height" constant="50" id="voC-uI-kQx"/>
+                    </constraints>
+                </view>
+                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Egj-jV-Z89">
+                    <rect key="frame" x="351" y="0.0" width="150" height="50"/>
+                    <subviews>
+                        <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pl3-Ye-QmI">
+                            <rect key="frame" x="-50" y="0.0" width="50" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="50" id="7gg-Mo-6Zg"/>
+                                <constraint firstAttribute="height" constant="50" id="HcK-xS-pw9"/>
+                            </constraints>
+                            <state key="normal" image="直播_收起_白"/>
+                            <connections>
+                                <action selector="onClickChangeUnfold:" destination="WEg-eK-Lep" eventType="touchUpInside" id="Etw-WM-egz"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BXk-ou-xea">
+                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="50" id="kEO-kk-UNz"/>
+                                <constraint firstAttribute="height" constant="50" id="lne-Rc-XSR"/>
+                            </constraints>
+                            <state key="normal" image="刷新_白"/>
+                            <connections>
+                                <action selector="onClickRefreshBtn:" destination="WEg-eK-Lep" eventType="touchUpInside" id="ogX-mN-n10"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ohw-jD-SMD">
+                            <rect key="frame" x="50" y="0.0" width="50" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="50" id="WEV-L5-koC"/>
+                                <constraint firstAttribute="height" constant="50" id="t7P-uR-K4n"/>
+                            </constraints>
+                            <state key="normal" image="直播_最大化_白"/>
+                            <connections>
+                                <action selector="onClickBigBtn:" destination="WEg-eK-Lep" eventType="touchUpInside" id="dEO-MC-E6G"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6mI-ZN-feW">
+                            <rect key="frame" x="100" y="0.0" width="50" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="50" id="9Ol-Hz-Gh7"/>
+                                <constraint firstAttribute="height" constant="50" id="kPs-gx-h4S"/>
+                            </constraints>
+                            <state key="normal" image="直播_关闭_白"/>
+                            <connections>
+                                <action selector="onClickCloseBtn:" destination="WEg-eK-Lep" eventType="touchUpInside" id="RwN-Bo-xIP"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xIU-71-54d">
+                    <rect key="frame" x="0.0" y="50" width="509" height="362"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="·直播中" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KNi-9w-7ca">
+                    <rect key="frame" x="179" y="203" width="45" height="20"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="12"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="go2-cJ-6tG"/>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="xIU-71-54d" firstAttribute="top" secondItem="Jd7-M7-vvT" secondAttribute="bottom" id="0Cy-wZ-8b1"/>
+                <constraint firstItem="xIU-71-54d" firstAttribute="leading" secondItem="go2-cJ-6tG" secondAttribute="leading" id="9QC-mH-J1d"/>
+                <constraint firstItem="go2-cJ-6tG" firstAttribute="trailing" secondItem="xIU-71-54d" secondAttribute="trailing" id="RwW-lf-gNs"/>
+                <constraint firstAttribute="bottom" secondItem="xIU-71-54d" secondAttribute="bottom" id="Y70-UG-tw2"/>
+                <constraint firstItem="go2-cJ-6tG" firstAttribute="trailing" secondItem="Jd7-M7-vvT" secondAttribute="trailing" id="j7z-9j-MIa"/>
+                <constraint firstItem="Jd7-M7-vvT" firstAttribute="top" secondItem="WEg-eK-Lep" secondAttribute="top" id="k3V-Tu-uzo"/>
+                <constraint firstItem="Egj-jV-Z89" firstAttribute="top" secondItem="WEg-eK-Lep" secondAttribute="top" id="kCX-KL-l6A"/>
+                <constraint firstItem="Jd7-M7-vvT" firstAttribute="leading" secondItem="go2-cJ-6tG" secondAttribute="leading" id="qAo-MS-voy"/>
+                <constraint firstItem="go2-cJ-6tG" firstAttribute="trailing" secondItem="Egj-jV-Z89" secondAttribute="trailing" constant="8" id="qho-YW-oud"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="bigSV" destination="5yr-3V-tSq" id="TOl-8T-35p"/>
+                <outlet property="changeUnfoldBtn" destination="Pl3-Ye-QmI" id="bn4-yD-daM"/>
+                <outlet property="liveLabel" destination="KNi-9w-7ca" id="d0D-yV-CUX"/>
+                <outlet property="nomalSV" destination="Egj-jV-Z89" id="kaO-Ay-1lj"/>
+                <outlet property="tapView" destination="xIU-71-54d" id="UN6-jA-icX"/>
+                <outlet property="topHud" destination="Jd7-M7-vvT" id="AQl-Ll-x5c"/>
+            </connections>
+            <point key="canvasLocation" x="206.52173913043481" y="-74.330357142857139"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="刷新_白" width="24" height="24"/>
+        <image name="直播_关闭_白" width="24" height="24"/>
+        <image name="直播_收起_白" width="24" height="24"/>
+        <image name="直播_最大化_白" width="24" height="24"/>
+        <image name="直播_返回" width="24" height="24"/>
+    </resources>
+</document>
