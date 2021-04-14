@@ -1,5 +1,7 @@
 # TXLive 腾讯直播拉流
 
+![image](https://github.com/beiguo172528/TXLive/blob/main/images/TXLiveGif.gif)
+
 注意：支持rtmp、flv等拉流
 
 
