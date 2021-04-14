@@ -14,7 +14,7 @@ pod 'TXLiteAVSDK_Professional'
 
 4.为了实现横屏，必须有navigation controller
 
+
 链接:
 GitHub:https://github.com/beiguo172528/TXLive
-
 简书：https://www.jianshu.com/p/29309730a4dd
